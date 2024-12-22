@@ -11,7 +11,7 @@
 
 <div align="center"><h2>Demonstration</h2></div>
 
-![image-demo](https://your-image-link.png)
+![image-demo](https://s2.loli.net/2024/12/22/vYXlPNgwK4sAhzU.png)
 
 &emsp;&emsp;Experience the system’s capabilities online through our demo interface. Click here to explore 👉 [NavigatorAI Demo](#)
 
