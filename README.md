@@ -5,7 +5,7 @@
 
 <div align="center"><h2>Description</h2></div>
 
-&emsp;&emsp;SmartTripPlanner is an intelligent travel itinerary planning system powered by large language models and multi-source data integration. The system allows users to input a destination city and travel duration, and dynamically generates a personalized travel itinerary. From retrieving scenic spots and local cuisines to generating detailed plans in HTML and PDF formats, SmartTripPlanner offers an efficient, intelligent, and user-friendly way to plan trips.
+&emsp;&emsp;NavigatorAI is an intelligent travel itinerary planning system powered by large language models and multi-source data integration. The system allows users to input a destination city and travel duration, and dynamically generates a personalized travel itinerary. From retrieving scenic spots and local cuisines to generating detailed plans in HTML and PDF formats, NavigatorAI offers an efficient, intelligent, and user-friendly way to plan trips.
 
 </div>
 
@@ -33,7 +33,7 @@
     <summary><h4>Installation</h4></summary>
 
 
-&emsp;&emsp;To get started with SmartTripPlanner, you need to install `conda` as your Python runtime environment. It is recommended to use `miniconda`.
+&emsp;&emsp;To get started with NavigatorAI, you need to install `conda` as your Python runtime environment. It is recommended to use `miniconda`.
 
 &emsp;&emsp;1. Create a virtual `conda` environment:
 
