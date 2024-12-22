@@ -79,7 +79,7 @@ $ python app.py
 2. [Google Search API Documentation](https://developers.google.com/custom-search)
 3. [DuckDuckGo API](https://duckduckgo.com/params)
 4. [Large Language Models by modelscope](https://modelscope.cn/)
-5.[Camel Hackathon](https://camel-ai-24h-hackathon.devpost.com/)
+5. [Camel Hackathon](https://camel-ai-24h-hackathon.devpost.com/)
 </div>
 
 <div align="center"><h2>Acknowledgements</h2></div>
