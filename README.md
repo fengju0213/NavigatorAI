@@ -1,1 +1,1 @@
-# Voyager
+# NavigatorAI
