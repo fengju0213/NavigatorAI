@@ -1,0 +1,7 @@
+autogen == 0.3.0
+flask == 3.0.3
+openai == 1.50.2
+python-dotenv == 1.0.0
+docx2pdf == 0.1.8
+jupyterlab == 4.2.5
+lightrag-hku == 0.0.8

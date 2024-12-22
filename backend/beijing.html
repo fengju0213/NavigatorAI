@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html><head><meta charset='utf-8'><title>旅行推荐</title>
+<style>
+
+    body {
+       font-family: "Microsoft YaHei", sans-serif;
+       margin: 20px;
+       background-color: #f8f8f8;
+       line-height: 1.6;
+    }
+    h1, h2 {
+       color: #333;
+    }
+    .itinerary-text {
+       background-color: #fff;
+       padding: 20px;
+       border-radius: 8px;
+       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+       margin-bottom: 30px;
+    }
+    .card-container {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 20px;
+       margin: 20px 0;
+    }
+    .card {
+       flex: 0 0 calc(300px);
+       border: 1px solid #ccc;
+       border-radius: 10px;
+       overflow: hidden;
+       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+       background-color: #fff;
+    }
+    .card-image {
+       width: 100%;
+       height: 200px;
+       overflow: hidden;
+       background: #f8f8f8;
+       text-align: center;
+    }
+    .card-image img {
+       max-width: 100%;
+       max-height: 100%;
+       object-fit: cover;
+    }
+    .card-content {
+       padding: 10px 15px;
+    }
+    .card-content h3 {
+       margin-top: 0;
+       margin-bottom: 10px;
+       font-size: 18px;
+    }
+    .card-content p {
+       margin: 5px 0;
+    }
+    .image-center {
+        text-align: center;   /* 让 <div> 居中对齐图片 */
+        margin: 20px 0;      /* 图片与上下文之间的间距，可按需调整 */
+    }
+
+    .image-center img {
+        width: 300px;        /* 统一宽度 */
+        height: 200px;       /* 统一高度 */
+        object-fit: cover;   /* 如果想让图片铺满容器，不失真可以选 contain/cover 等 */
+    }
+
+    
+</style></head><body>
+<h1>旅行行程与推荐</h1>
+<div class="itinerary-text">
+<p>根据您提供的信息，我为您规划了一个为期三天的北京旅行行程。考虑到北京是一个非常大的城市，为了使您的旅行更加顺畅，我会尽量选择地理位置接近的景点进行组合，并推荐合理的交通方式。以下是具体的行程安排：</p>
+<h2>Day1:</h2>
+<p>- 早餐：北京传统早点 - 炒肝</p>
+<p>  - 描述：北京的传统早点，主要材料为猪肝和猪肠，口感醇厚。</p>
+<p>        <div style="text-align: center;"></p>
+<p>            <img src="http://cp1.douguo.net/upload/caiku/a/f/b/yuan_afbdbfdeeb57e1455f69a1795a22957b.jpg" alt="图片" style="width: 300px; height: 200px;" /></p>
+<p>        </div></p>
+<p>- 上午：参观天安门广场</p>
+<p>  - 描述：位于北京市中心，是世界上最大的城市广场之一，周围有多个重要的政治文化建筑。</p>
+<p>        <div style="text-align: center;"></p>
+<p>            <img src="https://pic.vjshi.com/2022-09-21/45703a4a7d384ea5af6d1b3af8e4cbb6/00002.jpg?x-oss-process=style/watermark" alt="图片" style="width: 300px; height: 200px;" /></p>
+<p>        </div></p>
+<p>  - 出行建议：从酒店出发，乘坐地铁1号线直达天安门东站下车，步行至天安门广场。</p>
+<p>- 午餐：王府井小吃街</p>
+<p>  - 描述：位于北京市中心，是一条著名的商业街，汇集了各种商店、餐馆和娱乐设施。</p>
+<p>        <div style="text-align: center;"></p>
+<p>            <img src="https://pic.vjshi.com/2021-04-22/ae06531f501e82bac4d592c631f13f8a/00001.jpg?x-oss-process=style/watermark" alt="图片" style="width: 300px; height: 200px;" /></p>
+<p>        </div></p>
+<p>  - 出行建议：从天安门广场步行约10分钟即可到达。</p>
+<p>- 下午：游览故宫博物院</p>
+<p>  - 描述：专业博物馆，位于北京市中心，是明清两代皇家宫殿，也是世界上最大的古代木质结构建筑群。</p>
+<p>        <div style="text-align: center;"></p>
+<p>            <img src="http://img.pconline.com.cn/images/photoblog/6/7/7/1/6771928/20095/21/1242869005331.jpg" alt="图片" style="width: 300px; height: 200px;" /></p>
+<p>        </div></p>
+<p>  - 出行建议：从王府井步行约10分钟即可到达。</p>
+<p>- 晚餐：北京烤鸭</p>
+<p>  - 描述：北京最著名的特色美食之一，以其皮脆肉嫩、色泽鲜亮著称。</p>
+<p>        <div style="text-align: center;"></p>
+<p>            <img src="https://bpic.588ku.com/back_origin_min_pic/21/03/30/3c61d984d82395b2c503bdda6dc25a99.jpg!/fw/750/quality/99/unsharp/true/compress/true" alt="图片" style="width: 300px; height: 200px;" /></p>
+<p>        </div></p>
+<p>  - 出行建议：从故宫步行约10分钟可到达前门大街，那里有许多知名的烤鸭店。</p>
+<p>- 住宿：建议选择位于市中心的酒店，方便第二天的行程。</p>
+<h2>Day2:</h2>
+<p>- 早餐：炸酱面</p>
+<p>  - 描述：北京的传统面食，以黄豆酱、肉末等为主要调料，味道鲜美。</p>
+<p>        <div style="text-align: center;"></p>
+<p>            <img src="https://cp1.douguo.com/upload/caiku/0/4/e/yuan_04de17509b0d91643fb57e4ba258c23e.jpeg" alt="图片" style="width: 300px; height: 200px;" /></p>
+<p>        </div></p>
+<p>- 上午：参观颐和园</p>
+<p>  - 描述：地点与地标，位于北京市海淀区，是中国保存最完整的皇家园林，以昆明湖、万寿山为基础构建。</p>
+<p>        <div style="text-align: center;"></p>
+<p>            <img src="https://img.zcool.cn/community/01f57d5de75a8fa801209568e92ef9.jpg@3000w_1l_0o_100sh.jpg" alt="图片" style="width: 300px; height: 200px;" /></p>
+<p>        </div></p>
+<p>  - 出行建议：从酒店出发，乘坐地铁4号线转乘16号线至北宫门站下车，步行至颐和园。</p>
+<p>- 午餐：颐和园附近的餐厅享用午餐</p>
+<p>- 下午：游览圆明园</p>
+<p>  - 描述：位于北京市海淀区，是一座著名的皇家园林遗址，曾被誉为“万园之园”，现为遗址公园。</p>
+<p>  - 图片URL：暂无</p>
+<p>  - 出行建议：从颐和园乘坐公交或打车前往圆明园，大约需要20分钟。</p>
+<p>- 晚餐：涮羊肉</p>
+<p>  - 描述：一种火锅形式的美食，以新鲜的羊肉片为主料，搭配各种蔬菜和调料。</p>
+<p>        <div style="text-align: center;"></p>
+<p>            <img src="https://pic1.zhimg.com/v2-10f537c1269070b00262f358b6881bc0_r.jpg" alt="图片" style="width: 300px; height: 200px;" /></p>
+<p>        </div></p>
+<p>  - 出行建议：从圆明园打车返回市区，选择一家评价高的涮羊肉店享用晚餐。</p>
+<p>- 住宿：继续留在市中心的酒店。</p>
+<h2>Day3:</h2>
+<p>- 早餐：豆汁</p>
+<p>  - 描述：北京的传统饮品，由绿豆发酵制成，味道独特。</p>
+<p>        <div style="text-align: center;"></p>
+<p>            <img src="https://www.jucanw.com/UploadFiles/2014/2/2014092715144224576.jpg" alt="图片" style="width: 300px; height: 200px;" /></p>
+<p>        </div></p>
+<p>- 上午：参观慕田峪长城</p>
+<p>  - 描述：古迹，位于北京市，是长城的重要组成部分之一，以其保存完好的明代长城而闻名。</p>
+<p>        <div style="text-align: center;"></p>
+<p>            <img src="http://seopic.699pic.com/photo/50069/7934.jpg_wh1200.jpg" alt="图片" style="width: 300px; height: 200px;" /></p>
+<p>        </div></p>
+<p>  - 出行建议：从酒店出发，乘坐地铁或公交转乘前往慕田峪长城，大约需要1.5小时。</p>
+<p>- 午餐：长城脚下的农家菜</p>
+<p>- 下午：返回市区，自由活动时间</p>
+<p>  - 出行建议：从慕田峪长城乘坐公交或打车返回市区，大约需要1.5小时。</p>
+<p>- 晚餐：驴打滚</p>
+<p>  - 描述：北京的传统甜点，外层裹着红糖和熟芝麻，内馅为红豆沙。</p>
+<p>        <div style="text-align: center;"></p>
+<p>            <img src="https://d.ifengimg.com/q100/img1.ugc.ifeng.com/newugc/20190321/17/wemedia/37a6b77ed10e0da8dfb00edaad4f963e127cba9_size1142_w1920_h1080.jpg" alt="图片" style="width: 300px; height: 200px;" /></p>
+<p>        </div></p>
+<p>  - 出行建议：在市区内寻找一家评价好的甜品店享用晚餐。</p>
+<p>- 返程：根据您的返程时间，提前预订交通工具，确保顺利回家。</p>
+<p>希望这个行程能够帮助您在北京度过一个愉快的假期！如果您有任何其他需求或问题，请随时告诉我。</p>
+</div>
+</body></html>

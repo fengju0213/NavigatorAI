@@ -1,0 +1,122 @@
+[01:58:02.866] Running build in Washington, D.C., USA (East) – iad1
+[01:58:03.018] Retrieving list of deployment files...
+[01:58:03.319] Previous build cache not available
+[01:58:03.475] Downloading 77 deployment files...
+[01:58:04.315] Running "vercel build"
+[01:58:05.741] Vercel CLI 39.2.0
+[01:58:06.099] Running "install" command: `bun install`...
+[01:58:06.143] bun install v1.1.38 (bf2f153f)
+[01:58:06.158] Resolving dependencies
+[01:58:09.399] Resolved, downloaded and extracted [1046]
+[01:58:09.400] warn: incorrect peer dependency "date-fns@4.1.0"
+[01:58:09.651] Saved lockfile
+[01:58:09.652] 
+[01:58:09.653] + @types/node@22.10.2
+[01:58:09.653] + @types/react@18.3.18 (v19.0.2 available)
+[01:58:09.653] + @types/react-dom@18.3.5 (v19.0.2 available)
+[01:58:09.653] + postcss@8.4.49
+[01:58:09.653] + tailwindcss@3.4.17
+[01:58:09.653] + typescript@5.7.2
+[01:58:09.653] + @hookform/resolvers@3.9.1
+[01:58:09.653] + @radix-ui/react-accordion@1.2.2
+[01:58:09.653] + @radix-ui/react-alert-dialog@1.1.4
+[01:58:09.653] + @radix-ui/react-aspect-ratio@1.1.1
+[01:58:09.653] + @radix-ui/react-avatar@1.1.2
+[01:58:09.653] + @radix-ui/react-checkbox@1.1.3
+[01:58:09.653] + @radix-ui/react-collapsible@1.1.2
+[01:58:09.653] + @radix-ui/react-context-menu@2.2.4
+[01:58:09.653] + @radix-ui/react-dialog@1.1.4
+[01:58:09.653] + @radix-ui/react-dropdown-menu@2.1.4
+[01:58:09.653] + @radix-ui/react-hover-card@1.1.4
+[01:58:09.653] + @radix-ui/react-label@2.1.1
+[01:58:09.653] + @radix-ui/react-menubar@1.1.4
+[01:58:09.653] + @radix-ui/react-navigation-menu@1.2.3
+[01:58:09.653] + @radix-ui/react-popover@1.1.4
+[01:58:09.654] + @radix-ui/react-progress@1.1.1
+[01:58:09.654] + @radix-ui/react-radio-group@1.2.2
+[01:58:09.654] + @radix-ui/react-scroll-area@1.2.2
+[01:58:09.654] + @radix-ui/react-select@2.1.4
+[01:58:09.654] + @radix-ui/react-separator@1.1.1
+[01:58:09.654] + @radix-ui/react-slider@1.2.2
+[01:58:09.654] + @radix-ui/react-slot@1.1.1
+[01:58:09.654] + @radix-ui/react-switch@1.1.2
+[01:58:09.654] + @radix-ui/react-tabs@1.1.2
+[01:58:09.654] + @radix-ui/react-toast@1.2.4
+[01:58:09.654] + @radix-ui/react-toggle@1.1.1
+[01:58:09.654] + @radix-ui/react-toggle-group@1.1.1
+[01:58:09.654] + @radix-ui/react-tooltip@1.1.6
+[01:58:09.654] + autoprefixer@10.4.20
+[01:58:09.654] + class-variance-authority@0.7.1
+[01:58:09.654] + clsx@2.1.1
+[01:58:09.654] + cmdk@1.0.4
+[01:58:09.654] + date-fns@4.1.0
+[01:58:09.654] + embla-carousel-react@8.5.1
+[01:58:09.654] + input-otp@1.4.1
+[01:58:09.654] + lucide-react@0.454.0 (v0.469.0 available)
+[01:58:09.654] + next@14.2.16 (v15.1.2 available)
+[01:58:09.654] + next-themes@0.4.4
+[01:58:09.654] + react@18.3.1 (v19.0.0 available)
+[01:58:09.654] + react-day-picker@8.10.1 (v9.4.4 available)
+[01:58:09.654] + react-dom@18.3.1 (v19.0.0 available)
+[01:58:09.655] + react-hook-form@7.54.2
+[01:58:09.655] + react-resizable-panels@2.1.7
+[01:58:09.655] + recharts@2.15.0
+[01:58:09.655] + sonner@1.7.1
+[01:58:09.655] + tailwind-merge@2.5.5
+[01:58:09.656] + tailwindcss-animate@1.0.7
+[01:58:09.656] + uuid@11.0.3
+[01:58:09.657] + vaul@0.9.9 (v1.1.2 available)
+[01:58:09.657] + zod@3.24.1
+[01:58:09.657] 
+[01:58:09.657] 262 packages installed [3.53s]
+[01:58:09.684] Detected Next.js version: 14.2.16
+[01:58:09.685] Running "bun run build"
+[01:58:09.690] $ next build
+[01:58:10.445] Attention: Next.js now collects completely anonymous telemetry regarding usage.
+[01:58:10.446] This information is used to shape Next.js' roadmap and prioritize features.
+[01:58:10.446] You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[01:58:10.447] https://nextjs.org/telemetry
+[01:58:10.447] 
+[01:58:10.502]   ▲ Next.js 14.2.16
+[01:58:10.503]   - Experiments (use with caution):
+[01:58:10.503]     · webpackBuildWorker
+[01:58:10.504]     · parallelServerCompiles
+[01:58:10.504]     · parallelServerBuildTraces
+[01:58:10.504] 
+[01:58:10.570]    Creating an optimized production build ...
+[01:58:12.822] (node:117) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+[01:58:12.822] (Use `node --trace-deprecation ...` to show where the warning was created)
+[01:58:20.159] (node:160) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+[01:58:20.161] (Use `node --trace-deprecation ...` to show where the warning was created)
+[01:58:29.027]  ✓ Compiled successfully
+[01:58:29.029]    Skipping validation of types
+[01:58:29.029]    Skipping linting
+[01:58:29.488]    Collecting page data ...
+[01:58:29.916]    Generating static pages (0/4) ...
+[01:58:29.977]    Generating static pages (1/4) 
+[01:58:29.984]    Generating static pages (2/4) 
+[01:58:29.998]    Generating static pages (3/4) 
+[01:58:30.033]  ✓ Generating static pages (4/4)
+[01:58:30.045]    Finalizing page optimization ...
+[01:58:30.045]    Collecting build traces ...
+[01:58:30.051] 
+[01:58:30.062] Route (app)                              Size     First Load JS
+[01:58:30.062] ┌ ○ /                                    46 kB           133 kB
+[01:58:30.063] └ ○ /_not-found                          873 B            88 kB
+[01:58:30.063] + First Load JS shared by all            87.1 kB
+[01:58:30.063]   ├ chunks/117-280b9c9576cb8057.js       31.6 kB
+[01:58:30.063]   ├ chunks/fd9d1056-3750f1c68fb99acb.js  53.6 kB
+[01:58:30.063]   └ other shared chunks (total)          1.86 kB
+[01:58:30.063] 
+[01:58:30.063] 
+[01:58:30.063] ○  (Static)  prerendered as static content
+[01:58:30.063] 
+[01:58:30.223] Traced Next.js server files in: 32.832ms
+[01:58:30.296] Created all serverless functions in: 72.248ms
+[01:58:30.305] Collected static files (public/, static/, .next/static): 4.842ms
+[01:58:30.335] Build Completed in /vercel/output [24s]
+[01:58:30.392] Deploying outputs...
+[01:58:34.750] 
+[01:58:35.064] Deployment completed
+[01:58:41.222] Uploading build cache [101.28 MB]...
+[01:58:42.665] Build cache uploaded: 1.442s
