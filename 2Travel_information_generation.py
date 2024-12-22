@@ -290,7 +290,7 @@ class TravelPlanner:
             try:
                 # 使用DuckDuckGo搜索图片
                 images = self.search_toolkit.search_duckduckgo(
-                    query=f"{city} {attraction["name"]} 实景图",
+                    query=f"{city} {attraction['name']} 实景图",
                     source="images",
                     max_results=1
                 )
