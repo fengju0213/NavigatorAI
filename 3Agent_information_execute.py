@@ -1,7 +1,6 @@
 import os
 import json
 import re
-import html2text
 from flask import Flask, request, jsonify
 
 from camel.configs import QwenConfig
@@ -13,8 +12,8 @@ from camel.agents import ChatAgent
 app = Flask(__name__)
 
 # 你的环境变量
-os.environ["GOOGLE_API_KEY"] = "AIzaSy..."
-os.environ["SEARCH_ENGINE_ID"] = "6751a09..."
+os.environ["GOOGLE_API_KEY"] = "Your-Api-Key"
+os.environ["SEARCH_ENGINE_ID"] = "Your-Api-Key"
 
 # -------------------- 模型初始化 --------------------
 qwen_model = ModelFactory.create(
@@ -29,7 +28,19 @@ tools_list = [
     *SearchToolkit().get_tools(),
 ]
 
-sys_msg = """你是一位专业的旅游规划师。请你根据用户输入的旅行需求，...（此处省略，保持原先的系统提示）"""
+sys_msg = """你是一位专业的旅游规划师。请你根据用户输入的旅行需求，包括旅行天数、景点/美食的距离、描述、图片URL、预计游玩/就餐时长等信息，为用户提供一个详细的行程规划。
+
+请遵循以下要求：
+1. 按照 Day1、Day2、... 的形式组织输出，直到满足用户指定的天数。
+2. 每一天的行程请从早餐开始，食物尽量选用当地特色小吃美食，列出上午活动、午餐、下午活动、晚餐、夜间活动（若有），并在末尾总结住宿或返程安排。
+3. 对每个景点或美食，提供其基本信息： 
+   - 名称
+   - 描述
+   - 预计游玩/就餐时长（如果用户未提供，可以不写或自行估计）
+   - 图片URL（如果有）
+4. 请调用在线搜索工具在行程中对移动或出行所需时长做出合理估计。
+5. 输出语言为中文。
+6. 保持回复简洁、有条理，但必须包含用户想要的所有信息。"""
 
 agent = ChatAgent(
     system_message=sys_msg,
@@ -97,11 +108,24 @@ Day{days}:
 """)
     return "\n".join(lines)
 
+def fix_exclamation_link(text: str) -> str:
+    """
+    先把类似 ![](http://xx.jpg) 的写法，提取出其中的 http://xx.jpg，
+    替换成纯 http://xx.jpg
+    """
+    md_pattern = re.compile(r'!\[.*?\]\((https?://\S+)\)')
+    # 将 ![](http://xxx) 只保留 http://xxx
+    # 比如把 "![](http://xx.jpg)" -> "http://xx.jpg"
+    return md_pattern.sub(lambda m: m.group(1), text)
 
 def convert_picurl_to_img_tag(text: str, width: int = 300, height: int = 200) -> str:
     """
     将文本中的图片URL替换为带样式的HTML img标签，并让图片居中显示和统一大小
+    兼容两步：先处理 ![](url)，再匹配 - 图片URL: http://url
     """
+    # 第一步：把 ![](url) 变成纯 url
+    text_fixed = fix_exclamation_link(text)
+
     pattern = re.compile(r'-\s*图片URL：\s*(https?://\S+)')
     replaced_text = pattern.sub(
         rf'''
@@ -109,7 +133,7 @@ def convert_picurl_to_img_tag(text: str, width: int = 300, height: int = 200) ->
             <img src="\1" alt="图片" style="width: {width}px; height: {height}px;" />
         </div>
         ''',
-        text
+        text_fixed
     )
     return replaced_text
 
@@ -285,7 +309,7 @@ def generate_itinerary_html():
     city = req_data.get("city", "")
     days = req_data.get("days", "1")
 
-    filename = f"{city}{days}天旅游信息.json"
+    filename = f"store/{city}{days}天旅游信息.json"
     if not os.path.exists(filename):
         return jsonify({"error": f"文件 {filename} 不存在，请检查输入的目的地和天数！"}), 404
 
@@ -305,6 +329,7 @@ def generate_itinerary_html():
 
     # 3. 生成完整 HTML 报告
     html_content = generate_html_report(end_output, data)
+
 
     # 4. 直接返回 HTML
     return html_content, 200, {"Content-Type": "text/html; charset=utf-8"}
