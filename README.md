@@ -1,4 +1,4 @@
-```html
+
 <div align="center"><h1>NavigatorAI</h1></div>
 
 </div>
@@ -96,6 +96,3 @@ $ python app.py
 <div align="center"><h2>Contact</h2></div>
 
 Feel free to open GitHub issues or directly email us if you have any questions about this project. 
-``` 
-
-Make sure to replace placeholder links and names with actual values from your project!
