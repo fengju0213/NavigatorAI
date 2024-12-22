@@ -1,4 +1,5 @@
 import requests
+import json
 
 # API端点
 url = "http://localhost:5000/get_travel_plan"
