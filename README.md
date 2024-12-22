@@ -38,8 +38,8 @@
 &emsp;&emsp;1. Create a virtual `conda` environment:
 
 ```bash
-$ conda create -n smarttrip python==3.10 # smarttrip is the name of your environment
-$ conda activate smarttrip
+$ conda create -n NavigatorAI python==3.10 # NavigatorAI is the name of your environment
+$ conda activate NavigatorAI
 ```
 
 &emsp;&emsp;2. Install required dependencies:
