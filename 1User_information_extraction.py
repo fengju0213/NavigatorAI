@@ -17,8 +17,7 @@ from camel.agents import ChatAgent
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 load_dotenv()
-API_BASE = "https://api-inference.modelscope.cn/v1/"
-API_KEY = '058851c9-e848-484c-a1df-442c3f897c83'
+
 SYSTEM_PROMPT = """
 你是一个旅游信息提取助手。你的任务是从用户的输入中提取旅游目的地城市和旅游天数，并根据提取情况决定是否需要用户补充信息。
 
