@@ -9,9 +9,6 @@ from flask import Flask, request, jsonify
 import json
 import os
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyBOQObsk5Mpej9Fi19pqyOPrVWOhcQKLyw"
-os.environ["SEARCH_ENGINE_ID"] = "6751a0943f8c8475c"
-os.environ["FIRECRAWL_API_KEY"] = "fc-6ab16b0ebf364c0ea4882d59439845c7"
 os.environ["http_proxy"] = "http://127.0.0.1:7897"
 os.environ["https_proxy"] = "http://127.0.0.1:7897"
 app = Flask(__name__)
@@ -28,8 +25,6 @@ class TravelPlanner:
         self.model = ModelFactory.create(
             model_platform=ModelPlatformType.OPENAI_COMPATIBLE_MODEL,
             model_type="Qwen/Qwen2.5-72B-Instruct",
-            url='https://api-inference.modelscope.cn/v1/',
-            api_key='058851c9-e848-484c-a1df-442c3f897c83'
         )
 
         # 初始化各种工具
